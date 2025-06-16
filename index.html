@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spacez: Fractional Villa Investment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              light: '#2DD4BF', // teal-400
+              DEFAULT: '#0D9488', // teal-600 (main primary)
+              dark: '#047857',  // teal-700
+            },
+            secondary: {
+              light: '#FCD34D', // amber-300
+              DEFAULT: '#FBBF24', // amber-400 (main secondary)
+              dark: '#F59E0B',   // amber-500
+            },
+            accent: {
+              light: '#FB923C', // orange-400
+              DEFAULT: '#F97316', // orange-500 (main accent)
+              dark: '#EA580C',   // orange-600
+            },
+            neutral: {
+              50: '#F8FAFC',  // slate-50 (bgLight)
+              100: '#F1F5F9', // slate-100 (bgCard)
+              200: '#E2E8F0', // slate-200
+              300: '#CBD5E1', // slate-300 (borderLight)
+              400: '#94A3B8', // slate-400 (textLight on dark bg)
+              500: '#64748B', // slate-500 (textMedium)
+              600: '#475569', // slate-600
+              700: '#334152', // slate-700 
+              800: '#1E293B', // slate-800 (textDark)
+              900: '#0F172A', // slate-900
+            },
+            // Legacy names for easier transition if needed, but prefer semantic names above
+            // Will be used in THEME_COLORS constant
+            themePrimary: '#0D9488', // teal-600
+            themeSecondary: '#FBBF24', // amber-400
+            themeAccent: '#F97316', // orange-500
+            themeBgLight: '#F8FAFC', // slate-50
+            themeBgCard: '#FFFFFF', // white or slate-100 (#F1F5F9)
+            themeTextDark: '#1E293B', // slate-800
+            themeTextMedium: '#64748B', // slate-500
+            themeTextLight: '#E2E8F0', // slate-200 (for dark primary bg)
+            themeBorderLight: '#CBD5E1', // slate-300
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.3s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0, transform: 'translateY(-10px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            }
+          }
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-dom": "https://esm.sh/react-dom@^19.1.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^6.24.0",
+    "recharts": "https://esm.sh/recharts@^2.15.3"
+  }
+}
+</script>
+</head>
+<body class="font-sans bg-neutral-50 text-neutral-800">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
